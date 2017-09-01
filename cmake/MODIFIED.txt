@@ -1,0 +1,1 @@
+- redefined INLINE_DECL and INLINE_FUN in gsl_inline.h

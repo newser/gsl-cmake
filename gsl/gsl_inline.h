@@ -58,6 +58,22 @@
 #  define INLINE_DECL /* */
 #endif
 
+#ifdef INLINE_DECL
+#undef INLINE_DECL
+#endif
+
+#ifdef INLINE_FUN
+#undef INLINE_FUN
+#endif
+
+#if defined(_WIN64) || defined(_WIN32) || defined(WIN32)
+#define INLINE_DECL static __inline
+#define INLINE_FUN static __inline
+#else
+#define INLINE_DECL static inline
+#define INLINE_FUN static inline
+#endif
+
 /* Range checking conditions in headers do not require any run-time
    tests of the global variable gsl_check_range.  They are enabled or
    disabled in user code at compile time with GSL_RANGE_CHECK macro.

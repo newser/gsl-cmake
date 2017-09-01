@@ -1,0 +1,7 @@
+if (CMAKE_SYSTEM_NAME MATCHES Darwin)
+    set(cpu ${CMAKE_SYSTEM_PROCESSOR})
+    string(TOLOWER ${cpu} cpu)
+    if (cpu MATCHES powerpc)
+        set(GSL_HAVE_DARWIN_IEEE_INTERFACE 1)
+    endif ()
+endif ()

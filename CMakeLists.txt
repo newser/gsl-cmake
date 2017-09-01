@@ -2,22 +2,42 @@ project(gsl)
 
 cmake_minimum_required(VERSION 3.0.2)
 
+include(CheckLibraryExists)
+include(CheckCSourceCompiles)
+include(CheckSymbolExists)
+include(CheckIncludeFiles)
+
 set(SOURCE_DIR ${CMAKE_CURRENT_LIST_DIR})
 set(BUILD_DIR ${CMAKE_CURRENT_BINARY_DIR})
 
-include(CheckLibraryExists)
+# load platform specific settings
+if (CMAKE_SYSTEM_NAME STREQUAL Windows)
+    include(cmake/windows.cmake)
+elseif (CMAKE_SYSTEM_NAME STREQUAL Linux)
+    include(cmake/linux.cmake)
+elseif (CMAKE_SYSTEM_NAME STREQUAL Darwin)
+    include(cmake/macos.cmake)
+elseif (CMAKE_SYSTEM_NAME STREQUAL iOS)
+    include(cmake/ios.cmake)
+elseif (CMAKE_SYSTEM_NAME STREQUAL Android)
+    include(cmake/android.cmake)
+else ()
+    # more to be added
+    message(FATAL_ERROR "unsupported os: ${CMAKE_SYSTEM_NAME}")
+endif ()
+
+# config gsl
 include(${SOURCE_DIR}/cmake/util.cmake)
 include(${SOURCE_DIR}/cmake/config.cmake)
-
 configure_file(${SOURCE_DIR}/cmake/config.h.in ${BUILD_DIR}/config.h @ONLY)
 
+# building gsl need put all header files under a gsl directory
 file(MAKE_DIRECTORY ${BUILD_DIR}/gsl)
 file(GLOB_RECURSE GSL_HEADER ${SOURCE_DIR}/gsl "gsl*.h")
 file(COPY ${GSL_HEADER} DESTINATION ${BUILD_DIR}/gsl)
 
-check_library_exists(m cos "" HAVE_LIBM)
 if (GSL_HAVE_LIBM)
-  set(GSL_DEP m)
+    set(GSL_DEP m)
 endif ()
 
 # gls cblas

@@ -1,0 +1,1 @@
+check_symbol_exists(fprnd_t float.h GSL_HAVE_DECL_FPRND_T)

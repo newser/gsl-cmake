@@ -1,0 +1,1 @@
+check_symbol_exists(isfinite math.h GSL_HAVE_DECL_ISFINITE)

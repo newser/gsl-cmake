@@ -1,0 +1,3 @@
+if (CMAKE_SYSTEM MATCHES "AIX")
+    set(GSL_HAVE_AIX_IEEE_INTERFACE 1)
+endif ()

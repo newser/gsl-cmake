@@ -1,0 +1,1 @@
+check_symbol_exists(fesettrapenable fenv.h GSL_HAVE_DECL_FESETTRAPENABLE)

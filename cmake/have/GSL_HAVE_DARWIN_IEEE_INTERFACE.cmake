@@ -5,3 +5,7 @@ if (CMAKE_SYSTEM_NAME MATCHES Darwin)
         set(GSL_HAVE_DARWIN_IEEE_INTERFACE 1)
     endif ()
 endif ()
+
+if (NOT GSL_HAVE_DARWIN_IEEE_INTERFACE)
+    set(GSL_HAVE_DARWIN_IEEE_INTERFACE 0)
+endif ()

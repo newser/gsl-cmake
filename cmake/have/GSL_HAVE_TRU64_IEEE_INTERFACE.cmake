@@ -1,1 +1,3 @@
-# todo
+if (NOT GSL_HAVE_TRU64_IEEE_INTERFACE)
+    set(GSL_HAVE_TRU64_IEEE_INTERFACE 0)
+endif ()

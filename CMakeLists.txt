@@ -53,6 +53,7 @@ target_link_libraries(gslcblas ${GSL_DEP})
 set(GLS_SRC)
 # generally sources under util are not necessary
 add_group(${SOURCE_DIR}/gsl/sys sys GLS_SRC)
+add_group(${SOURCE_DIR}/gsl/test test GLS_SRC)
 add_library(gsl ${GLS_SRC})
 target_include_directories(gsl PRIVATE ${BUILD_DIR})
 target_compile_definitions(gsl PRIVATE -DHAVE_CONFIG_H)

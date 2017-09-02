@@ -35,6 +35,7 @@ configure_file(${SOURCE_DIR}/cmake/config.h.in ${BUILD_DIR}/config.h @ONLY)
 file(MAKE_DIRECTORY ${BUILD_DIR}/gsl)
 file(GLOB_RECURSE GSL_HEADER ${SOURCE_DIR}/gsl "gsl*.h")
 file(COPY ${GSL_HEADER} DESTINATION ${BUILD_DIR}/gsl)
+file(COPY ${SOURCE_DIR}/gsl/build.h DESTINATION ${BUILD_DIR})
 
 if (GSL_HAVE_LIBM)
     set(GSL_DEP m)
@@ -45,4 +46,14 @@ add_group(${SOURCE_DIR}/gsl/cblas cblas CBLAS_SRC)
 list(REMOVE_ITEM CBLAS_SRC ${SOURCE_DIR}/gsl/cblas/tests.c)
 add_library(gslcblas ${CBLAS_SRC})
 target_include_directories(gslcblas PRIVATE ${BUILD_DIR})
+target_compile_definitions(gslcblas PRIVATE -DHAVE_CONFIG_H)
 target_link_libraries(gslcblas ${GSL_DEP})
+
+# gsl
+set(GLS_SRC)
+# generally sources under util are not necessary
+add_group(${SOURCE_DIR}/gsl/sys sys GLS_SRC)
+add_library(gsl ${GLS_SRC})
+target_include_directories(gsl PRIVATE ${BUILD_DIR})
+target_compile_definitions(gsl PRIVATE -DHAVE_CONFIG_H)
+target_link_libraries(gsl gslcblas)

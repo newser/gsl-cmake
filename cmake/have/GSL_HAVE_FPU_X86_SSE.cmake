@@ -9,3 +9,7 @@ if (CMAKE_SYSTEM_NAME STREQUAL Linux)
             GSL_HAVE_FPU_X86_SSE)
     endif ()
 endif ()
+
+if (NOT GSL_HAVE_FPU_X86_SSE)
+    set(GSL_HAVE_FPU_X86_SSE 0)
+endif ()

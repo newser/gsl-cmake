@@ -4,7 +4,8 @@
 sed 's/^#undef *\(HAVE.*\)/#define \1 @GSL_\1@/' ../gsl/config.h.in  > config.h.in
 
 # generate cmake includes
-echo \# gsl configuration > config.cmake
+echo \# gsl configuration\n > config.cmake
+echo >> config.cmake
 for f in $(sed -n 's/^#undef *\(HAVE.*\)/GSL_\1/p' ../gsl/config.h.in)
 do
     if [ ! -f have/${f}.cmake -o ! -s have/${f}.cmake ]
@@ -14,7 +15,6 @@ do
     fi
 
     echo \# ${f} >> config.cmake
-    echo set\(${f} 0\) >> config.cmake
     echo include\(\${SOURCE_DIR}/cmake/have/${f}.cmake\) >> config.cmake
     echo >> config.cmake
 done

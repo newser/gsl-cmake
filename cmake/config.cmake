@@ -1,182 +1,182 @@
-# gsl configurationn
+# gsl configuration
 
 # GSL_HAVE_C99_INLINE
-include(${SOURCE_DIR}/cmake/have/GSL_HAVE_C99_INLINE.cmake)
+include(${SOURCE_DIR}/cmake/config/GSL_HAVE_C99_INLINE.cmake)
 
 # GSL_HAVE_DECL_ACOSH
-include(${SOURCE_DIR}/cmake/have/GSL_HAVE_DECL_ACOSH.cmake)
+include(${SOURCE_DIR}/cmake/config/GSL_HAVE_DECL_ACOSH.cmake)
 
 # GSL_HAVE_DECL_ASINH
-include(${SOURCE_DIR}/cmake/have/GSL_HAVE_DECL_ASINH.cmake)
+include(${SOURCE_DIR}/cmake/config/GSL_HAVE_DECL_ASINH.cmake)
 
 # GSL_HAVE_DECL_ATANH
-include(${SOURCE_DIR}/cmake/have/GSL_HAVE_DECL_ATANH.cmake)
+include(${SOURCE_DIR}/cmake/config/GSL_HAVE_DECL_ATANH.cmake)
 
 # GSL_HAVE_DECL_EXPM1
-include(${SOURCE_DIR}/cmake/have/GSL_HAVE_DECL_EXPM1.cmake)
+include(${SOURCE_DIR}/cmake/config/GSL_HAVE_DECL_EXPM1.cmake)
 
 # GSL_HAVE_DECL_FEENABLEEXCEPT
-include(${SOURCE_DIR}/cmake/have/GSL_HAVE_DECL_FEENABLEEXCEPT.cmake)
+include(${SOURCE_DIR}/cmake/config/GSL_HAVE_DECL_FEENABLEEXCEPT.cmake)
 
 # GSL_HAVE_DECL_FESETTRAPENABLE
-include(${SOURCE_DIR}/cmake/have/GSL_HAVE_DECL_FESETTRAPENABLE.cmake)
+include(${SOURCE_DIR}/cmake/config/GSL_HAVE_DECL_FESETTRAPENABLE.cmake)
 
 # GSL_HAVE_DECL_FINITE
-include(${SOURCE_DIR}/cmake/have/GSL_HAVE_DECL_FINITE.cmake)
+include(${SOURCE_DIR}/cmake/config/GSL_HAVE_DECL_FINITE.cmake)
 
 # GSL_HAVE_DECL_FPRND_T
-include(${SOURCE_DIR}/cmake/have/GSL_HAVE_DECL_FPRND_T.cmake)
+include(${SOURCE_DIR}/cmake/config/GSL_HAVE_DECL_FPRND_T.cmake)
 
 # GSL_HAVE_DECL_FREXP
-include(${SOURCE_DIR}/cmake/have/GSL_HAVE_DECL_FREXP.cmake)
+include(${SOURCE_DIR}/cmake/config/GSL_HAVE_DECL_FREXP.cmake)
 
 # GSL_HAVE_DECL_HYPOT
-include(${SOURCE_DIR}/cmake/have/GSL_HAVE_DECL_HYPOT.cmake)
+include(${SOURCE_DIR}/cmake/config/GSL_HAVE_DECL_HYPOT.cmake)
 
 # GSL_HAVE_DECL_ISFINITE
-include(${SOURCE_DIR}/cmake/have/GSL_HAVE_DECL_ISFINITE.cmake)
+include(${SOURCE_DIR}/cmake/config/GSL_HAVE_DECL_ISFINITE.cmake)
 
 # GSL_HAVE_DECL_ISINF
-include(${SOURCE_DIR}/cmake/have/GSL_HAVE_DECL_ISINF.cmake)
+include(${SOURCE_DIR}/cmake/config/GSL_HAVE_DECL_ISINF.cmake)
 
 # GSL_HAVE_DECL_ISNAN
-include(${SOURCE_DIR}/cmake/have/GSL_HAVE_DECL_ISNAN.cmake)
+include(${SOURCE_DIR}/cmake/config/GSL_HAVE_DECL_ISNAN.cmake)
 
 # GSL_HAVE_DECL_LDEXP
-include(${SOURCE_DIR}/cmake/have/GSL_HAVE_DECL_LDEXP.cmake)
+include(${SOURCE_DIR}/cmake/config/GSL_HAVE_DECL_LDEXP.cmake)
 
 # GSL_HAVE_DECL_LOG1P
-include(${SOURCE_DIR}/cmake/have/GSL_HAVE_DECL_LOG1P.cmake)
+include(${SOURCE_DIR}/cmake/config/GSL_HAVE_DECL_LOG1P.cmake)
 
 # GSL_HAVE_DLFCN_H
-include(${SOURCE_DIR}/cmake/have/GSL_HAVE_DLFCN_H.cmake)
+include(${SOURCE_DIR}/cmake/config/GSL_HAVE_DLFCN_H.cmake)
 
 # GSL_HAVE_DOPRNT
-include(${SOURCE_DIR}/cmake/have/GSL_HAVE_DOPRNT.cmake)
+include(${SOURCE_DIR}/cmake/config/GSL_HAVE_DOPRNT.cmake)
 
 # GSL_HAVE_EXIT_SUCCESS_AND_FAILURE
-include(${SOURCE_DIR}/cmake/have/GSL_HAVE_EXIT_SUCCESS_AND_FAILURE.cmake)
+include(${SOURCE_DIR}/cmake/config/GSL_HAVE_EXIT_SUCCESS_AND_FAILURE.cmake)
 
 # GSL_HAVE_EXTENDED_PRECISION_REGISTERS
-include(${SOURCE_DIR}/cmake/have/GSL_HAVE_EXTENDED_PRECISION_REGISTERS.cmake)
+include(${SOURCE_DIR}/cmake/config/GSL_HAVE_EXTENDED_PRECISION_REGISTERS.cmake)
 
 # GSL_HAVE_FPU_X86_SSE
-include(${SOURCE_DIR}/cmake/have/GSL_HAVE_FPU_X86_SSE.cmake)
+include(${SOURCE_DIR}/cmake/config/GSL_HAVE_FPU_X86_SSE.cmake)
 
 # GSL_HAVE_IEEEFP_H
-include(${SOURCE_DIR}/cmake/have/GSL_HAVE_IEEEFP_H.cmake)
+include(${SOURCE_DIR}/cmake/config/GSL_HAVE_IEEEFP_H.cmake)
 
 # GSL_HAVE_IEEE_COMPARISONS
-include(${SOURCE_DIR}/cmake/have/GSL_HAVE_IEEE_COMPARISONS.cmake)
+include(${SOURCE_DIR}/cmake/config/GSL_HAVE_IEEE_COMPARISONS.cmake)
 
 # GSL_HAVE_IEEE_DENORMALS
-include(${SOURCE_DIR}/cmake/have/GSL_HAVE_IEEE_DENORMALS.cmake)
+include(${SOURCE_DIR}/cmake/config/GSL_HAVE_IEEE_DENORMALS.cmake)
 
 # GSL_HAVE_INLINE
-include(${SOURCE_DIR}/cmake/have/GSL_HAVE_INLINE.cmake)
+include(${SOURCE_DIR}/cmake/config/GSL_HAVE_INLINE.cmake)
 
 # GSL_HAVE_INTTYPES_H
-include(${SOURCE_DIR}/cmake/have/GSL_HAVE_INTTYPES_H.cmake)
+include(${SOURCE_DIR}/cmake/config/GSL_HAVE_INTTYPES_H.cmake)
 
 # GSL_HAVE_LIBM
-include(${SOURCE_DIR}/cmake/have/GSL_HAVE_LIBM.cmake)
+include(${SOURCE_DIR}/cmake/config/GSL_HAVE_LIBM.cmake)
 
 # GSL_HAVE_MEMCPY
-include(${SOURCE_DIR}/cmake/have/GSL_HAVE_MEMCPY.cmake)
+include(${SOURCE_DIR}/cmake/config/GSL_HAVE_MEMCPY.cmake)
 
 # GSL_HAVE_MEMMOVE
-include(${SOURCE_DIR}/cmake/have/GSL_HAVE_MEMMOVE.cmake)
+include(${SOURCE_DIR}/cmake/config/GSL_HAVE_MEMMOVE.cmake)
 
 # GSL_HAVE_MEMORY_H
-include(${SOURCE_DIR}/cmake/have/GSL_HAVE_MEMORY_H.cmake)
+include(${SOURCE_DIR}/cmake/config/GSL_HAVE_MEMORY_H.cmake)
 
 # GSL_HAVE_PRINTF_LONGDOUBLE
-include(${SOURCE_DIR}/cmake/have/GSL_HAVE_PRINTF_LONGDOUBLE.cmake)
+include(${SOURCE_DIR}/cmake/config/GSL_HAVE_PRINTF_LONGDOUBLE.cmake)
 
 # GSL_HAVE_STDINT_H
-include(${SOURCE_DIR}/cmake/have/GSL_HAVE_STDINT_H.cmake)
+include(${SOURCE_DIR}/cmake/config/GSL_HAVE_STDINT_H.cmake)
 
 # GSL_HAVE_STDLIB_H
-include(${SOURCE_DIR}/cmake/have/GSL_HAVE_STDLIB_H.cmake)
+include(${SOURCE_DIR}/cmake/config/GSL_HAVE_STDLIB_H.cmake)
 
 # GSL_HAVE_STRDUP
-include(${SOURCE_DIR}/cmake/have/GSL_HAVE_STRDUP.cmake)
+include(${SOURCE_DIR}/cmake/config/GSL_HAVE_STRDUP.cmake)
 
 # GSL_HAVE_STRINGS_H
-include(${SOURCE_DIR}/cmake/have/GSL_HAVE_STRINGS_H.cmake)
+include(${SOURCE_DIR}/cmake/config/GSL_HAVE_STRINGS_H.cmake)
 
 # GSL_HAVE_STRING_H
-include(${SOURCE_DIR}/cmake/have/GSL_HAVE_STRING_H.cmake)
+include(${SOURCE_DIR}/cmake/config/GSL_HAVE_STRING_H.cmake)
 
 # GSL_HAVE_STRTOL
-include(${SOURCE_DIR}/cmake/have/GSL_HAVE_STRTOL.cmake)
+include(${SOURCE_DIR}/cmake/config/GSL_HAVE_STRTOL.cmake)
 
 # GSL_HAVE_STRTOUL
-include(${SOURCE_DIR}/cmake/have/GSL_HAVE_STRTOUL.cmake)
+include(${SOURCE_DIR}/cmake/config/GSL_HAVE_STRTOUL.cmake)
 
 # GSL_HAVE_SYS_STAT_H
-include(${SOURCE_DIR}/cmake/have/GSL_HAVE_SYS_STAT_H.cmake)
+include(${SOURCE_DIR}/cmake/config/GSL_HAVE_SYS_STAT_H.cmake)
 
 # GSL_HAVE_SYS_TYPES_H
-include(${SOURCE_DIR}/cmake/have/GSL_HAVE_SYS_TYPES_H.cmake)
+include(${SOURCE_DIR}/cmake/config/GSL_HAVE_SYS_TYPES_H.cmake)
 
 # GSL_HAVE_UNISTD_H
-include(${SOURCE_DIR}/cmake/have/GSL_HAVE_UNISTD_H.cmake)
+include(${SOURCE_DIR}/cmake/config/GSL_HAVE_UNISTD_H.cmake)
 
 # GSL_HAVE_VPRINTF
-include(${SOURCE_DIR}/cmake/have/GSL_HAVE_VPRINTF.cmake)
+include(${SOURCE_DIR}/cmake/config/GSL_HAVE_VPRINTF.cmake)
 
 # GSL_HAVE_GNUSPARC_IEEE_INTERFACE
-include(${SOURCE_DIR}/cmake/have/GSL_HAVE_GNUSPARC_IEEE_INTERFACE.cmake)
+include(${SOURCE_DIR}/cmake/config/GSL_HAVE_GNUSPARC_IEEE_INTERFACE.cmake)
 
 # GSL_HAVE_GNUM68K_IEEE_INTERFACE
-include(${SOURCE_DIR}/cmake/have/GSL_HAVE_GNUM68K_IEEE_INTERFACE.cmake)
+include(${SOURCE_DIR}/cmake/config/GSL_HAVE_GNUM68K_IEEE_INTERFACE.cmake)
 
 # GSL_HAVE_GNUPPC_IEEE_INTERFACE
-include(${SOURCE_DIR}/cmake/have/GSL_HAVE_GNUPPC_IEEE_INTERFACE.cmake)
+include(${SOURCE_DIR}/cmake/config/GSL_HAVE_GNUPPC_IEEE_INTERFACE.cmake)
 
 # GSL_HAVE_GNUX86_IEEE_INTERFACE
-include(${SOURCE_DIR}/cmake/have/GSL_HAVE_GNUX86_IEEE_INTERFACE.cmake)
+include(${SOURCE_DIR}/cmake/config/GSL_HAVE_GNUX86_IEEE_INTERFACE.cmake)
 
 # GSL_HAVE_SUNOS4_IEEE_INTERFACE
-include(${SOURCE_DIR}/cmake/have/GSL_HAVE_SUNOS4_IEEE_INTERFACE.cmake)
+include(${SOURCE_DIR}/cmake/config/GSL_HAVE_SUNOS4_IEEE_INTERFACE.cmake)
 
 # GSL_HAVE_SOLARIS_IEEE_INTERFACE
-include(${SOURCE_DIR}/cmake/have/GSL_HAVE_SOLARIS_IEEE_INTERFACE.cmake)
+include(${SOURCE_DIR}/cmake/config/GSL_HAVE_SOLARIS_IEEE_INTERFACE.cmake)
 
 # GSL_HAVE_HPUX11_IEEE_INTERFACE
-include(${SOURCE_DIR}/cmake/have/GSL_HAVE_HPUX11_IEEE_INTERFACE.cmake)
+include(${SOURCE_DIR}/cmake/config/GSL_HAVE_HPUX11_IEEE_INTERFACE.cmake)
 
 # GSL_HAVE_HPUX_IEEE_INTERFACE
-include(${SOURCE_DIR}/cmake/have/GSL_HAVE_HPUX_IEEE_INTERFACE.cmake)
+include(${SOURCE_DIR}/cmake/config/GSL_HAVE_HPUX_IEEE_INTERFACE.cmake)
 
 # GSL_HAVE_TRU64_IEEE_INTERFACE
-include(${SOURCE_DIR}/cmake/have/GSL_HAVE_TRU64_IEEE_INTERFACE.cmake)
+include(${SOURCE_DIR}/cmake/config/GSL_HAVE_TRU64_IEEE_INTERFACE.cmake)
 
 # GSL_HAVE_IRIX_IEEE_INTERFACE
-include(${SOURCE_DIR}/cmake/have/GSL_HAVE_IRIX_IEEE_INTERFACE.cmake)
+include(${SOURCE_DIR}/cmake/config/GSL_HAVE_IRIX_IEEE_INTERFACE.cmake)
 
 # GSL_HAVE_AIX_IEEE_INTERFACE
-include(${SOURCE_DIR}/cmake/have/GSL_HAVE_AIX_IEEE_INTERFACE.cmake)
+include(${SOURCE_DIR}/cmake/config/GSL_HAVE_AIX_IEEE_INTERFACE.cmake)
 
 # GSL_HAVE_FREEBSD_IEEE_INTERFACE
-include(${SOURCE_DIR}/cmake/have/GSL_HAVE_FREEBSD_IEEE_INTERFACE.cmake)
+include(${SOURCE_DIR}/cmake/config/GSL_HAVE_FREEBSD_IEEE_INTERFACE.cmake)
 
 # GSL_HAVE_OS2EMX_IEEE_INTERFACE
-include(${SOURCE_DIR}/cmake/have/GSL_HAVE_OS2EMX_IEEE_INTERFACE.cmake)
+include(${SOURCE_DIR}/cmake/config/GSL_HAVE_OS2EMX_IEEE_INTERFACE.cmake)
 
 # GSL_HAVE_NETBSD_IEEE_INTERFACE
-include(${SOURCE_DIR}/cmake/have/GSL_HAVE_NETBSD_IEEE_INTERFACE.cmake)
+include(${SOURCE_DIR}/cmake/config/GSL_HAVE_NETBSD_IEEE_INTERFACE.cmake)
 
 # GSL_HAVE_OPENBSD_IEEE_INTERFACE
-include(${SOURCE_DIR}/cmake/have/GSL_HAVE_OPENBSD_IEEE_INTERFACE.cmake)
+include(${SOURCE_DIR}/cmake/config/GSL_HAVE_OPENBSD_IEEE_INTERFACE.cmake)
 
 # GSL_HAVE_DARWIN_IEEE_INTERFACE
-include(${SOURCE_DIR}/cmake/have/GSL_HAVE_DARWIN_IEEE_INTERFACE.cmake)
+include(${SOURCE_DIR}/cmake/config/GSL_HAVE_DARWIN_IEEE_INTERFACE.cmake)
 
 # GSL_HAVE_DARWIN86_IEEE_INTERFACE
-include(${SOURCE_DIR}/cmake/have/GSL_HAVE_DARWIN86_IEEE_INTERFACE.cmake)
+include(${SOURCE_DIR}/cmake/config/GSL_HAVE_DARWIN86_IEEE_INTERFACE.cmake)
 
 # GSL_STDC_HEADERS
-include(${SOURCE_DIR}/cmake/have/GSL_STDC_HEADERS.cmake)
+include(${SOURCE_DIR}/cmake/config/GSL_STDC_HEADERS.cmake)
 

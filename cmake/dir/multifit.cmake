@@ -1,0 +1,4 @@
+# multifit sources
+source_group(multifit FILES gsl/multifit/gcv.c gsl/multifit/multilinear.c gsl/multifit/multiwlinear.c gsl/multifit/work.c gsl/multifit/lmniel.c gsl/multifit/lmder.c gsl/multifit/fsolver.c gsl/multifit/fdfsolver.c gsl/multifit/fdfridge.c gsl/multifit/fdjac.c gsl/multifit/convergence.c gsl/multifit/gradient.c gsl/multifit/covar.c gsl/multifit/multirobust.c gsl/multifit/robust_wfun.c gsl/multifit/multireg.c)
+list(APPEND GSL_SRC gsl/multifit/gcv.c gsl/multifit/multilinear.c gsl/multifit/multiwlinear.c gsl/multifit/work.c gsl/multifit/lmniel.c gsl/multifit/lmder.c gsl/multifit/fsolver.c gsl/multifit/fdfsolver.c gsl/multifit/fdfridge.c gsl/multifit/fdjac.c gsl/multifit/convergence.c gsl/multifit/gradient.c gsl/multifit/covar.c gsl/multifit/multirobust.c gsl/multifit/robust_wfun.c gsl/multifit/multireg.c)
+

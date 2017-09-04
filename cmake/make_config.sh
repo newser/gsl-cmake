@@ -6,24 +6,24 @@ sed -e 's/^#undef *\(HAVE.*\)/#define \1 @GSL_\1@/' \
     ../gsl/config.h.in  > config.h.in
 
 # generate cmake includes
-cfg_entry()
+config_entry()
 {
-    if [ ! -f have/$1.cmake -o ! -s have/$1.cmake ]
+    if [ ! -f config/$1.cmake -o ! -s config/$1.cmake ]
     then
-        echo need write have/$1.cmake
-        touch have/$1.cmake
+        echo config entry: $1
+        touch config/$1.cmake
     fi
 
     echo \# $1 >> config.cmake
-    echo include\(\${SOURCE_DIR}/cmake/have/$1.cmake\) >> config.cmake
+    echo include\(\${SOURCE_DIR}/cmake/config/$1.cmake\) >> config.cmake
     echo >> config.cmake
 }
 
-echo \# gsl configuration\n > config.cmake
+echo \# gsl configuration > config.cmake
 echo >> config.cmake
 for f in $(sed -n 's/^#undef *\(HAVE.*\)/GSL_\1/p' ../gsl/config.h.in)
 do
-    cfg_entry ${f}
+    config_entry ${f}
 done
 
-cfg_entry GSL_STDC_HEADERS
+config_entry GSL_STDC_HEADERS

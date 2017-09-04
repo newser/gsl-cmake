@@ -1,0 +1,4 @@
+# multifit_nlinear sources
+source_group(multifit_nlinear FILES gsl/multifit_nlinear/cholesky.c gsl/multifit_nlinear/convergence.c gsl/multifit_nlinear/covar.c gsl/multifit_nlinear/dogleg.c gsl/multifit_nlinear/fdf.c gsl/multifit_nlinear/fdfvv.c gsl/multifit_nlinear/fdjac.c gsl/multifit_nlinear/lm.c gsl/multifit_nlinear/qr.c gsl/multifit_nlinear/scaling.c gsl/multifit_nlinear/subspace2D.c gsl/multifit_nlinear/svd.c gsl/multifit_nlinear/trust.c)
+list(APPEND GSL_SRC gsl/multifit_nlinear/cholesky.c gsl/multifit_nlinear/convergence.c gsl/multifit_nlinear/covar.c gsl/multifit_nlinear/dogleg.c gsl/multifit_nlinear/fdf.c gsl/multifit_nlinear/fdfvv.c gsl/multifit_nlinear/fdjac.c gsl/multifit_nlinear/lm.c gsl/multifit_nlinear/qr.c gsl/multifit_nlinear/scaling.c gsl/multifit_nlinear/subspace2D.c gsl/multifit_nlinear/svd.c gsl/multifit_nlinear/trust.c)
+

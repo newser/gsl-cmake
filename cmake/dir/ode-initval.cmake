@@ -1,0 +1,4 @@
+# ode-initval sources
+source_group(ode-initval FILES gsl/ode-initval/control.c gsl/ode-initval/cstd.c gsl/ode-initval/cscal.c gsl/ode-initval/evolve.c gsl/ode-initval/step.c gsl/ode-initval/rk2.c gsl/ode-initval/rk2imp.c gsl/ode-initval/rk2simp.c gsl/ode-initval/rk4.c gsl/ode-initval/rk4imp.c gsl/ode-initval/rkf45.c gsl/ode-initval/rk8pd.c gsl/ode-initval/rkck.c gsl/ode-initval/bsimp.c gsl/ode-initval/gear1.c gsl/ode-initval/gear2.c)
+list(APPEND GSL_SRC gsl/ode-initval/control.c gsl/ode-initval/cstd.c gsl/ode-initval/cscal.c gsl/ode-initval/evolve.c gsl/ode-initval/step.c gsl/ode-initval/rk2.c gsl/ode-initval/rk2imp.c gsl/ode-initval/rk2simp.c gsl/ode-initval/rk4.c gsl/ode-initval/rk4imp.c gsl/ode-initval/rkf45.c gsl/ode-initval/rk8pd.c gsl/ode-initval/rkck.c gsl/ode-initval/bsimp.c gsl/ode-initval/gear1.c gsl/ode-initval/gear2.c)
+

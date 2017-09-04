@@ -84,6 +84,15 @@ add_group(${SOURCE_DIR}/gsl/interpolation interpolation GLS_SRC)
 add_group(${SOURCE_DIR}/gsl/ode-initval ode-initval GLS_SRC)
 add_group(${SOURCE_DIR}/gsl/roots roots GLS_SRC)
 add_group(${SOURCE_DIR}/gsl/min min GLS_SRC)
+add_group(${SOURCE_DIR}/gsl/monte monte GLS_SRC)
+add_group(${SOURCE_DIR}/gsl/ntuple ntuple GLS_SRC)
+add_group(${SOURCE_DIR}/gsl/diff diff GLS_SRC)
+add_group(${SOURCE_DIR}/gsl/deriv deriv GLS_SRC)
+add_group(${SOURCE_DIR}/gsl/wavelet wavelet GLS_SRC)
+add_group(${SOURCE_DIR}/gsl/bspline bspline GLS_SRC)
+add_group(${SOURCE_DIR}/gsl/spblas spblas GLS_SRC)
+add_group(${SOURCE_DIR}/gsl/spmatrix spmatrix GLS_SRC)
+add_group(${SOURCE_DIR}/gsl/splinalg splinalg GLS_SRC)
 
 add_group(${SOURCE_DIR}/gsl/eigen eigen GLS_SRC)
 list(REMOVE_ITEM GLS_SRC ${SOURCE_DIR}/gsl/eigen/qrstep.c)
@@ -169,6 +178,10 @@ add_group(${SOURCE_DIR}/gsl/multimin multimin GLS_SRC)
 list(REMOVE_ITEM GLS_SRC
      ${SOURCE_DIR}/gsl/multimin/directional_minimize.c
      ${SOURCE_DIR}/gsl/multimin/linear_wrapper.c)
+
+add_group(${SOURCE_DIR}/gsl/cdf cdf GLS_SRC)
+list(REMOVE_ITEM GLS_SRC
+     ${SOURCE_DIR}/gsl/cdf/beta_inc.c)
 
 file(GLOB_RECURSE F_SRC ${SOURCE_DIR}/gsl "*_source.*")
 file(GLOB_RECURSE F_TEST ${SOURCE_DIR}/gsl "test*")

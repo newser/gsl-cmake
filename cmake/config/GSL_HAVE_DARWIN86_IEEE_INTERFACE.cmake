@@ -6,6 +6,3 @@ if (CMAKE_SYSTEM_NAME STREQUAL Darwin)
     endif ()
 endif ()
 
-if (NOT GSL_HAVE_DARWIN86_IEEE_INTERFACE)
-    set(GSL_HAVE_DARWIN86_IEEE_INTERFACE 0)
-endif ()

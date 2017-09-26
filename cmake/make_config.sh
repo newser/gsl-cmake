@@ -16,6 +16,9 @@ config_entry()
 
     echo \# $1 >> config.cmake
     echo include\(\${SOURCE_DIR}/cmake/config/$1.cmake\) >> config.cmake
+    echo if \(NOT $1\) >> config.cmake
+    echo "    set($1 0)" >> config.cmake
+    echo endif \(\) >> config.cmake
     echo >> config.cmake
 }
 

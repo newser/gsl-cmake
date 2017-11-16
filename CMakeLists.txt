@@ -59,3 +59,17 @@ add_library(gsl ${GSL_SRC})
 target_include_directories(gsl PRIVATE ${BUILD_DIR})
 target_compile_definitions(gsl PRIVATE -DHAVE_CONFIG_H)
 target_link_libraries(gsl gslcblas)
+
+# test
+set(GSL_ENABLE_TEST 0 CACHE BOOL "enable test cases")
+if (GSL_ENABLE_TEST)
+    enable_testing()
+
+    function(add_gsl_test name)
+        add_executable(${name} ${ARGN})
+        target_link_libraries(${name} gsl)
+        add_test(${name} ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/${name})
+    endfunction()
+
+    include(${SOURCE_DIR}/cmake/test.cmake)
+endif ()

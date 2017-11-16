@@ -20,7 +20,7 @@ cblas_entry()
         echo \# cblas sources > dir/cblas.cmake
         echo source_group\(cblas FILES ${SRC}\) >> dir/cblas.cmake
         echo set\(CBLAS_SRC ${SRC}\) >> dir/cblas.cmake
-        echo >> dir/dir.cmake
+        echo >> dir/cblas.cmake
     fi
 
     echo \# cblas >> dir.cmake

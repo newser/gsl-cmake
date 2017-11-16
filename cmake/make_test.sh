@@ -5,6 +5,9 @@ ALL=$(grep '^ *SUBDIRS *= *' ../gsl/Makefile.am | sed 's/^ *SUBDIRS *= *//')
 echo \# gsl directories > test.cmake
 echo >> test.cmake
 
+echo \#!/bin/sh > test.sh
+echo >> test.sh
+
 dir_entry()
 {
     if [ ! -f test/$1.cmake -o ! -s test/$1.cmake ]
@@ -22,6 +25,10 @@ dir_entry()
         then
             echo add_gsl_test\($1 ${SRC}\) >> test/$1.cmake
             echo >> test/$1.cmake
+
+            echo echo testing $1 >> test.sh
+            echo ./$1 >> test.sh
+            echo >> test.sh
         fi
     fi
 

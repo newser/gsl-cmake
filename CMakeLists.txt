@@ -68,6 +68,7 @@ if (GSL_ENABLE_TEST)
     function(add_gsl_test name)
         add_executable(${name} ${ARGN})
         target_link_libraries(${name} gsl)
+        target_include_directories(${name} PRIVATE ${BUILD_DIR})
         add_test(${name} ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/${name})
     endfunction()
 

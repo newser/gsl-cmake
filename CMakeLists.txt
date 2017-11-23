@@ -11,6 +11,8 @@ set(SOURCE_DIR ${CMAKE_CURRENT_LIST_DIR})
 set(BUILD_DIR ${CMAKE_CURRENT_BINARY_DIR})
 
 # load platform specific settings
+set(GSLBLAS_C_FLAGS)
+set(GSL_C_FLAGS)
 if (CMAKE_SYSTEM_NAME STREQUAL Windows)
     include(cmake/platform/windows.cmake)
 elseif (CMAKE_SYSTEM_NAME STREQUAL Linux)
@@ -55,12 +57,20 @@ target_include_directories(gslcblas PRIVATE ${BUILD_DIR}/gsl) # config.h
 target_compile_definitions(gslcblas PRIVATE -DHAVE_CONFIG_H)
 target_link_libraries(gslcblas ${GSL_DEP})
 
+if (GSLBLAS_C_FLAGS)
+    target_compile_options(gslcblas PRIVATE ${GSLBLAS_C_FLAGS})
+endif ()
+
 # gsl
 add_library(gsl ${GSL_SRC})
 target_include_directories(gsl PRIVATE ${BUILD_DIR})
 target_include_directories(gsl PRIVATE ${BUILD_DIR}/gsl) # config.h
 target_compile_definitions(gsl PRIVATE -DHAVE_CONFIG_H)
 target_link_libraries(gsl gslcblas)
+
+if (GSL_C_FLAGS)
+    target_compile_options(gsl PRIVATE ${GSL_C_FLAGS})
+endif ()
 
 # test
 set(GSL_ENABLE_TEST 0 CACHE BOOL "enable test cases")
@@ -71,7 +81,7 @@ if (GSL_ENABLE_TEST)
         add_executable(${name} ${ARGN})
         target_link_libraries(${name} gsl)
         target_include_directories(${name} PRIVATE ${BUILD_DIR})
-		target_include_directories(${name} PRIVATE ${BUILD_DIR}/gsl) # config.h
+        target_include_directories(${name} PRIVATE ${BUILD_DIR}/gsl) # config.h
         add_test(${name} ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/${name})
     endfunction()
 
